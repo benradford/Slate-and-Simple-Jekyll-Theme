@@ -10,5 +10,7 @@ Slate+Simple is a light-on-dark theme that features crisp typography and include
 <img src="slate+simple_screenshot.png">
 </figure>
 
+Theme by Benjamin J. Radford, 2017
+
 
 
