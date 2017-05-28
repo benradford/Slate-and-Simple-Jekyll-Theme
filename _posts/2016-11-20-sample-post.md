@@ -3,7 +3,7 @@ layout: post
 categories: posts
 title: Sample Post
 subtitle: This is a test post.
-featured-image: /images/2016-11-19/abstract-1.jpg
+featured-image: https://benradford.github.io/Slate-and-Simple-Jekyll-Theme/images/2016-11-19/abstract-1.jpg
 tags: [sample post]
 date-string: NOVEMBER 20, 2016
 ---
