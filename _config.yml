@@ -1,8 +1,6 @@
 title:            Slate+Simple Jekyll Theme
 description:      Your site description...
 copyright:        Your Name
-
-baseurl:          Slate-and-Simple-Jekyll-Theme
        
 
 future:      false  # publish future dated posts --  true, false (default) 
