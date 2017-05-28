@@ -114,11 +114,11 @@ svg:not(:root) {
 
 .pagination {
     a{
-        color: $base-color;
+        color: lighten($base-color,30);
     }
     
     a:hover {
-        color: lighten($base-color,30);
+        color: lighten($base-color,60);
     }
     
     word-spacing: 10px;
