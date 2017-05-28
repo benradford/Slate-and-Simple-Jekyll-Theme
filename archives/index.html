@@ -1,0 +1,38 @@
+---
+layout: post-index
+title: Archives
+---
+<article>
+    <h1 class="entry-title">
+        <a>{{ page.title }}</a>
+    </h1>
+    <hr>
+</article>
+
+{% for post in site.posts %}
+    {% capture this_year %}{{ post.date | date: "%Y" }}{% endcapture %}
+    {% capture next_year %}{{ post.previous.date | date: "%Y" }}{% endcapture %}
+
+    {% if forloop.first %}
+    <article>
+        <h1 style="color:black;" class="entry-title">{{ this_year }}</h1>
+      
+        <ul>
+        {% endif %}
+
+        <li class="entry-title"><a href="{{ site.url }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></li>
+
+    {% if forloop.last %}
+    </ul>
+        
+    </article>
+    {% else %}
+        {% if this_year != next_year %}
+          </ul>
+        </article>
+        <article>
+          <h2 id="{{ next_year }}-ref" class="year-heading">{{next_year}}</h2>
+          <ul>
+        {% endif %}
+    {% endif %}
+{% endfor %}

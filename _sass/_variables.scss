@@ -1,0 +1,30 @@
+/*--- PAGE ------------------------------------------------------------------*/
+
+$feature-image-height            : 400px; // min 150px recommended
+$front-page-feature-image-height : 300px; // min 150px recommended
+$column-width                    : 950px;
+
+/*--- TYPOGRAPHY ------------------------------------------------------------*/
+
+$base-font                       : 'Lato', Calibri, Arial, sans-serif;
+$heading-font                    : $base-font;
+$caption-font                    : $base-font;
+$code-font                       : monospace;
+$alt-font                        : serif;
+
+$doc-font-size                   : 16;
+$doc-line-height                 : 26;
+
+/*--- COLORS ----------------------------------------------------------------*/
+
+$base-color                      : rgba(#222,0.8);
+$body-color                      : #202020;
+$text-color                      : #808080;
+$border-color                    : lighten($base-color,60);
+$link-color                      : #202020;
+
+/*--- SCREEN SIZES ----------------------------------------------------------*/
+
+$small                           : "only screen and (min-width: 30em)";
+$medium                          : "only screen and (min-width: 48em)";
+$large                           : "only screen and (min-width: 62.5em)";

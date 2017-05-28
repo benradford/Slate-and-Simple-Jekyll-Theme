@@ -1,0 +1,24 @@
+<div class="pagination">
+    {% if paginator.total_pages > 1 %}
+
+        {% if paginator.page == 1 %}
+            <a href="{{ site.url }}/page{{ paginator.next_page }}/">OLDER→</a>
+        {% endif %}
+    
+        {% if paginator.page == 2 %}
+            <a href="/">←NEWER</a>
+            {% if paginator.page < paginator.total_pages %}
+                | <a href="{{ site.url }}/page{{ paginator.next_page }}/">OLDER→</a>
+            {% endif %}
+        {% endif %}
+                                         
+        {% if paginator.page > 2 %}
+            <a href="{{ site.url }}/page{{ paginator.previous_page }}/">←NEWER</a>
+
+            {% if paginator.page < paginator.total_pages %}
+                | <a href="{{ site.url }}/page{{ paginator.next_page }}/">OLDER→</a>
+            {% endif %}
+
+        {% endif %}
+    {% endif %}
+</div>

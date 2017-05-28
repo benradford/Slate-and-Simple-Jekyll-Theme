@@ -1,0 +1,55 @@
+<!doctype html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
+<!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="en"><![endif]-->
+<!--[if gt IE 8]><!--><html class="no-js" lang="en"><!--<![endif]-->
+
+<head>
+    {% include head.html %}
+
+    <!-- HEADER IMAGE -->
+    <!-- <center>
+        <span class="main-header-image">
+            <a href="/"><img src="/images/header/clean-and-simple-header.jpg"></a>
+        </span>
+    </center> -->
+    <br>
+    <center>
+        <span class="main-header-image">
+            <h1 style="font-weight:100; font-kerning:normal"><a href="/">{{ site.title }}</a></h1>
+        </span>
+    </center>
+
+    <!-- NAVIGATION -->
+    <br>
+    <center>
+        <ul class="navigation-bar">
+            <li><a href="/">HOME</a></li>
+            <li><a href="/archives/">ARCHIVE</a></li>
+            <li><a href="/tags/">TAGS</a></li>
+            <li><a href="/about/">ABOUT</a></li>
+            <li><a href="{{ "/feed.xml" | prepend: site.baseurl }}">RSS</a></li>
+            <li><a href="https://www.github.com/benradford/Slate_and_Simple_Jekyll_Theme">GET THEME</a></li>
+        </ul>
+    </center> 
+</head>
+ 
+<!-- BODY -->
+<body id="post-index">
+    {% include browser-upgrade.html %}
+
+    <!-- MAIN -->
+    <div id="main" role="main">
+      {{ content }}
+    </div>       
+</body>
+
+<!-- FOOTER -->  
+<footer>  
+    <div class="footer-wrapper">
+        <footer role="contentinfo">
+            {% include footer.html %}
+        </footer>
+    </div>   
+</footer>
+</html>
