@@ -319,11 +319,11 @@ header .entry-meta {
     font-size: 14px;
 
     a:link{
-        color: darken($text-color,1);
+        color: lighten($text-color,60);
     }
     
 	a:hover {
-		color: darken($text-color,40);
+		color: lighten($text-color,80);
 	}
 }
 
