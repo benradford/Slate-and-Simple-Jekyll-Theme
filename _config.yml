@@ -2,7 +2,7 @@ title:            Slate+Simple Jekyll Theme
 description:      Your site description...
 copyright:        Your Name
 
-site.url:         https://benradford.github.io/Slate-and-Simple-Jekyll-Theme
+url:         https://benradford.github.io/Slate-and-Simple-Jekyll-Theme
        
 
 future:      false  # publish future dated posts --  true, false (default) 
