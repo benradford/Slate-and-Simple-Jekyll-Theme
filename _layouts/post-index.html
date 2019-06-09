@@ -22,18 +22,9 @@
 
     <!-- NAVIGATION -->
     <br>
-    <center>
-        <ul class="navigation-bar">
-            <li><a href="/">HOME</a></li>
-            <li><a href="/archives/">ARCHIVE</a></li>
-            <li><a href="/tags/">TAGS</a></li>
-            <li><a href="/about/">ABOUT</a></li>
-            <li><a href="{{ "/feed.xml" | prepend: site.baseurl }}">RSS</a></li>
-            <li><a href="https://www.github.com/benradford/Slate-and-Simple-Jekyll-Theme">GET THEME</a></li>
-        </ul>
-    </center> 
+    {% include navigation.html %}
 </head>
- 
+
 <!-- BODY -->
 <body id="post-index">
     {% include browser-upgrade.html %}
@@ -41,15 +32,15 @@
     <!-- MAIN -->
     <div id="main" role="main">
       {{ content }}
-    </div>       
+    </div>
 </body>
 
-<!-- FOOTER -->  
-<footer>  
+<!-- FOOTER -->
+<footer>
     <div class="footer-wrapper">
         <footer role="contentinfo">
             {% include footer.html %}
         </footer>
-    </div>   
+    </div>
 </footer>
 </html>
