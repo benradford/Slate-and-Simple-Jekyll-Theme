@@ -1,9 +1,10 @@
 title:            Slate+Simple Jekyll Theme
 description:      Your site description...
 copyright:        Your Name
-       
+url: # add your custom site url (format: https://example.com)
 
-future:      false  # publish future dated posts --  true, false (default) 
+
+future:      false  # publish future dated posts --  true, false (default)
 highlighter: rouge
 markdown:    kramdown
 gems:
@@ -11,7 +12,7 @@ gems:
   - jekyll-paginate
   - jekyll-gist
   - jekyll-feed
-  
+
 sass:
   sass_dir: _sass
   style: compressed
@@ -29,10 +30,10 @@ paginate: 5
 #  toc_levels: 1..6
 #  enable_coderay: false
 
-include: 
+include:
   - .htaccess
-  
-exclude: 
+
+exclude:
   - "*.less"
   - "*.sublime-project"
   - "*.sublime-workspace"
